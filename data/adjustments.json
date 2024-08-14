@@ -1,0 +1,568 @@
+{
+    "Speech, Language, and Communication": {
+        "strengths": [
+            "Communicates creatively through nonverbal methods",
+            "Communicates directly and honestly",
+            "Quickly grasps and follows verbal instructions",
+            "Easily understands and uses nonverbal cues",
+            "Speaks with clear and consistent tone",
+            "Communicates fluently and understands both verbal and nonverbal cues easily",
+            "Comprehends and summarizes information effectively"
+        ],
+        "needs": [
+            "Content and grammar may be delayed, while speech skills might not be delayed",
+            "May talk in a very loud, very soft, or husky voice",
+            "May reverse pronouns",
+            "Displays unusual tone of voice (e.g., monotone, robotic, or high pitch)",
+            "Can have difficulty maintaining a conversation"
+        ],
+        "adjustments": {
+            "Communicates creatively through nonverbal methods": [
+                "Provided visuals for communication",
+                "Provided additional written/visual instructions to support verbal instructions",
+                "Used an individual goal-making visual"
+            ],
+            "Communicates directly and honestly": [
+                "Provided additional time to complete a learning task",
+                "Communication with Allied Health professional to support individual needs",
+                "Provided unscheduled brain break to complete a learning task"
+            ],
+            "Quickly grasps and follows verbal instructions": [
+                "Additional hand-over communication to specialist staff",
+                "Communication book entry",
+                "1:1 support provided to assess learning"
+            ],
+            "Easily understands and uses nonverbal cues": [
+                "Provided visuals for communication",
+                "Used an individual goal-making visual",
+                "Communication book entry"
+            ],
+            "Speaks with clear and consistent tone": [
+                "Additional Lexi time to support social/emotional regulation",
+                "Additional mindfulness intervention used",
+                "Used an individual goal-making visual"
+            ],
+            "Communicates fluently and understands both verbal and nonverbal cues easily": [
+                "Provided visuals for communication",
+                "Used an individual goal-making visual",
+                "Communication book entry"
+            ],
+            "Comprehends and summarizes information effectively": [
+                "Provided additional time to complete a learning task",
+                "1:1 support provided to assess learning",
+                "Modified a learning task / modified worksheet"
+            ],
+            "Content and grammar may be delayed, while speech skills might not be delayed": [
+                "Planned differentiated tasks to suit individual needs",
+                "Planned for additional explicit teaching 1:1 or small group",
+                "Planned for teaching to meet individual learning goals",
+                "Opportunity was provided to repeat an assessment or test",
+                "Modified report provided"
+            ],
+            "May talk in a very loud, very soft, or husky voice": [
+                "Created a social story for a specific change/new experience",
+                "Communication book entry",
+                "Additional phone/email to communicate individual needs"
+            ],
+            "May reverse pronouns": [
+                "Planned for teaching to meet individual learning goals",
+                "Provided additional written/visual instructions to support verbal instructions",
+                "Provided additional support with a visual timer"
+            ],
+            "Displays unusual tone of voice (e.g., monotone, robotic, or high pitch)": [
+                "Planned for individual IT support to meet specific needs",
+                "Additional support plan developed/implemented",
+                "Modified assessment task provided",
+                "Meeting with Literacy Tutor to discuss learning goals and/or pathways for learning"
+            ],
+            "Can have difficulty maintaining a conversation": [
+                "Planned for additional explicit teaching 1:1 or small group",
+                "Communication with Allied Health professional to support individual needs",
+                "Problem-solving meeting conducted to identify additional supports required"
+            ]
+        }
+    },
+    "Social, Emotional, and Adaptive Skills": {
+        "strengths": [
+            "Interprets body language in a unique way",
+            "Comfortable socializing through technology",
+            "Prefers the attention of adults to peers",
+            "Forms deep emotional connections with others",
+            "Greets others and engages socially when comfortable",
+            "Easily forms and maintains friendships with peers",
+            "Demonstrates self-control and considers consequences before acting",
+            "Enjoys and seeks out group play with peers",
+            "Stays in the classroom and follows classroom routines",
+            "Actively engages with the world around them",
+            "Easily transitions between different topics and activities",
+            "Balances focus with interest in a variety of activities",
+            "Quickly adapts and moves on to new topics",
+            "Remains calm and flexible in the face of changes",
+            "Asks for help when needed and self-advocates",
+            "Independently follows routines",
+            "Manages personal hygiene independently"
+        ],
+        "needs": [
+            "Can sometimes act out in class without thinking of consequences",
+            "Limited age-appropriate relationships with peers",
+            "Seems lonely and/or prefers to play alone",
+            "Leaves the classroom without warning",
+            "Seems to be in his/her 'own world' at times",
+            "Difficulty understanding how others think and feel",
+            "Difficulty in making and maintaining age-related friendships",
+            "Difficulty independently staying on task and maintaining effort",
+            "Difficulty with personal hygiene",
+            "Frequently loses or misplaces items such as homework, books, toys",
+            "Doesn’t pay attention to details or makes careless mistakes",
+            "Becomes unusually frustrated when trying to do simple tasks"
+        ],
+        "adjustments": {
+            "Interprets body language in a unique way": [
+                "Provided visuals for communication",
+                "Provided additional strategies (SWPBS, Visual Timer) to complete a learning task",
+                "Communication book entry"
+            ],
+            "Comfortable socializing through technology": [
+                "Planned for individual IT support to meet specific need",
+                "Adaptive computer software was provided",
+                "Provided an alternative way to complete a learning task"
+            ],
+            "Prefers the attention of adults to peers": [
+                "Planned for additional explicit teaching 1:1 or small group",
+                "Provided individualised strategies to meet specific needs",
+                "Communication book entry"
+            ],
+            "Forms deep emotional connections with others": [
+                "Planned for specific behavioural social/emotional needs and made adjustments accordingly",
+                "Provided a social stories/scripts to teach a positive social concept",
+                "Supported to walk up from the carpark in the mornings"
+            ],
+            "Greets others and engages socially when comfortable": [
+                "Explicit social skills teaching to meet an individual need",
+                "Art social group - lunchtime was accessed",
+                "Provided social stories/scripts to teach a positive social concept"
+            ],
+            "Easily forms and maintains friendships with peers": [
+                "Art social group - lunchtime was accessed",
+                "Provided additional strategies (SWPBS, Visual Timer) to complete a learning task",
+                "Provided social stories/scripts to teach a positive social concept"
+            ],
+            "Demonstrates self-control and considers consequences before acting": [
+                "Provided visuals for communication",
+                "Additional mindfulness intervention used",
+                "Provided individualised strategies to meet specific needs"
+            ],
+            "Enjoys and seeks out group play with peers": [
+                "Art social group - lunchtime was accessed",
+                "Provided additional structured play plan options",
+                "Provided specific sensory needs and made adjustments accordingly"
+            ],
+            "Stays in the classroom and follows classroom routines": [
+                "Implemented specific seating arrangements to support student needs",
+                "Provided visuals for choice making",
+                "Used an individual goal-making visual"
+            ],
+            "Actively engages with the world around them": [
+                "Provided additional structured play plan options",
+                "Provided visuals for communication",
+                "Used a visual for sharing classroom toys and equipment"
+            ],
+            "Easily transitions between different topics and activities": [
+                "Provided visuals for communication",
+                "Used an individual goal-making visual",
+                "Provided an alternative way to complete a learning task"
+            ],
+            "Balances focus with interest in a variety of activities": [
+                "Provided visuals for communication",
+                "Provided visuals for choice making",
+                "Provided additional movement breaks implemented for individual regulation"
+            ],
+            "Quickly adapts and moves on to new topics": [
+                "Provided visuals for communication",
+                "Provided additional information ahead of time for prewarning",
+                "Used an individual goal-making visual"
+            ],
+            "Remains calm and flexible in the face of changes": [
+                "Provided visuals for communication",
+                "Used an individual goal-making visual",
+                "Communication with Allied Health professional to support individual needs"
+            ],
+            "Asks for help when needed and self-advocates": [
+                "Provided visuals for communication",
+                "A Help card was accessed",
+                "Communication book entry"
+            ],
+            "Independently follows routines": [
+                "Provided additional written/visual instructions to support verbal instructions",
+                "Provided additional information ahead of time for prewarning",
+                "Used an individual goal-making visual"
+            ],
+            "Manages personal hygiene independently": [
+                "Separate equipment of health needs provided",
+                "Individual food breaks provided throughout the day",
+                "Supported to walk up from the carpark in the mornings"
+            ],
+            "Can sometimes act out in class without thinking of consequences": [
+                "Planned for specific sensory needs and made adjustments accordingly",
+                "Problem-solving meeting conducted to identify additional supports required",
+                "Individual positive reward system implemented",
+                "Targeted individual prompting throughout the school day to address behavioral expectations"
+            ],
+            "Limited age-appropriate relationships with peers": [
+                "Provided a social stories/scripts to teach a positive social concept",
+                "Additional hand-over communication to specialist staff",
+                "Provided highly individualized strategies to meet specific needs",
+                "Explicit social skills teaching to meet an individual need"
+            ],
+            "Seems lonely and/or prefers to play alone": [
+                "Provided a visual social/emotional check-in",
+                "Additional structured play plan options",
+                "Supervised unscheduled withdrawal/break from class"
+            ],
+            "Leaves the classroom without warning": [
+                "Used an individual break card",
+                "Pre-warning visuals provided for change in teacher",
+                "Supervised unscheduled withdrawal/break from class"
+            ],
+            "Seems to be in his/her 'own world' at times": [
+                "Provided visuals for self-regulation",
+                "Meeting with Learner Diversity Leader regarding student needs",
+                "Problem-solving meeting conducted to identify additional supports required"
+            ],
+            "Difficulty understanding how others think and feel": [
+                "Meeting with Wellbeing regarding individual student needs",
+                "Pre-warning visuals provided for change in teacher",
+                "Additional Auslan visuals created and used",
+                "Provided visuals for self-regulation"
+            ],
+            "Difficulty in making and maintaining age-related friendships": [
+                "Meeting with Co-Principals regarding individual student needs",
+                "Additional communication in the car park to discuss individual needs",
+                "Provided a social stories/scripts to teach a positive social concept",
+                "Art social group - lunchtime was accessed"
+            ],
+            "Difficulty independently staying on task and maintaining effort": [
+                "Planned for individual IT support to meet specific needs",
+                "Provided additional support with a visual timer",
+                "Provided separate supervision to complete a learning task",
+                "Additional supports (headphones, technology) provided to complete assessment or test"
+            ],
+            "Difficulty with personal hygiene": [
+                "Provided separate supervision to complete a learning task",
+                "Individual positive reward system implemented",
+                "Targeted individual prompting throughout the school day to address behavioral expectations",
+                "Provided specific classroom equipment, e.g., pencil grip"
+            ],
+            "Frequently loses or misplaces items such as homework, books, toys": [
+                "Provided a visual timetable with 1 or 2 step instructions",
+                "Individual positive reward system implemented",
+                "Targeted individual prompting throughout the school day to address behavioral expectations",
+                "Provided additional support with a visual timer"
+            ],
+            "Doesn’t pay attention to details or makes careless mistakes": [
+                "Provided a visual timetable with 1 or 2 step instructions",
+                "Used a cool-down strategy between changing activities",
+                "Provided additional support with a visual timer",
+                "Provided specific classroom equipment, e.g., pencil grip"
+            ],
+            "Becomes unusually frustrated when trying to do simple tasks": [
+                "Used a cool-down strategy between changing activities",
+                "Provided additional time to complete a learning task",
+                "Provided breakdown of instructions to complete a learning task",
+                "Individual positive reward system implemented"
+            ]
+        }
+    },
+    "Cognitive Processing": {
+        "strengths": [
+            "Takes time to deeply process and understand information",
+            "Notices specific details, patterns, or changes",
+            "Strong working memory, easily recalls facts and information",
+            "Easily solves problems using logical thinking",
+            "Demonstrates consistent strengths across all areas of cognitive processing",
+            "Attentive to details and careful in completing tasks"
+        ],
+        "needs": [
+            "Has difficulty solving basic problems that require logic",
+            "Has difficulty comprehending and summarizing what has been learned",
+            "An uneven pattern of thinking abilities",
+            "Difficulty transferring learning from one context to another",
+            "Difficulty independently staying on task and maintaining effort",
+            "Becomes unusually frustrated when trying to do simple tasks"
+        ],
+        "adjustments": {
+            "Takes time to deeply process and understand information": [
+                "Provided additional time to complete a learning task or assessment/test",
+                "Adjusted the pace of delivery to a topic or task",
+                "Provided breakdown of instructions to complete a learning task"
+            ],
+            "Notices specific details, patterns, or changes": [
+                "Provided additional strategies (SWPBS, Visual Timer) to complete a learning task",
+                "Used an individual goal-making visual",
+                "Provided additional time to complete a learning task"
+            ],
+            "Strong working memory, easily recalls facts and information": [
+                "Planned for teaching to meet individual learning goal",
+                "1:1 support provided to assess learning",
+                "Modified a learning task / modified worksheet"
+            ],
+            "Easily solves problems using logical thinking": [
+                "Provided additional time to complete a learning task",
+                "Provided an individual timetable on desk",
+                "Provided additional written/visual instructions to support verbal instructions"
+            ],
+            "Demonstrates consistent strengths across all areas of cognitive processing": [
+                "Planned for teaching to meet individual learning goal",
+                "1:1 support provided to assess learning",
+                "Modified a learning task / modified worksheet"
+            ],
+            "Attentive to details and careful in completing tasks": [
+                "Provided additional time to complete a learning task",
+                "Provided additional written/visual instructions to support verbal instructions",
+                "Provided additional movement breaks implemented for individual regulation"
+            ],
+            "Has difficulty solving basic problems that require logic": [
+                "Provided additional time to complete a learning task",
+                "Planned for additional explicit teaching 1:1 or small group",
+                "Meeting with Literacy Tutor to discuss learning goals and/or pathways for learning",
+                "1:1 support provided to assess learning"
+            ],
+            "Has difficulty comprehending and summarizing what has been learned": [
+                "Planned for hands-on learning to support individual needs",
+                "Provided additional written/visual instructions to support verbal instructions",
+                "Provided a breakdown of instructions to complete a learning task",
+                "Provided additional time to complete an assessment/test"
+            ],
+            "An uneven pattern of thinking abilities": [
+                "Exemption from completing a standardized test",
+                "Modified report provided",
+                "Provided a social stories/scripts to teach a positive social concept"
+            ],
+            "Difficulty transferring learning from one context to another": [
+                "Provided additional time to complete a learning task",
+                "Planned for hands-on learning to support individual needs",
+                "Provided a social stories/scripts to teach a positive social concept",
+                "Implemented a visual timetable with 1 or 2 step instructions"
+            ],
+            "Difficulty independently staying on task and maintaining effort": [
+                "Planned differentiated tasks to suit individual needs",
+                "Additional phone/email to communicate individual needs",
+                "Provided separate supervision to complete a learning task",
+                "Provided additional support with a visual timer"
+            ],
+            "Becomes unusually frustrated when trying to do simple tasks": [
+                "Used a cool-down strategy between changing activities",
+                "Provided additional time to complete a learning task",
+                "Provided breakdown of instructions to complete a learning task",
+                "Individual positive reward system implemented"
+            ]
+        }
+    },
+    "Physical and Sensory Needs": {
+        "strengths": [
+            "Seeks sensory experiences through specific behaviors",
+            "Comfortable with various sensory stimuli without being overwhelmed",
+            "Enjoys a wide variety of food textures",
+            "Eats comfortably and without difficulty in a school environment",
+            "Adapts to specific dietary needs",
+            "Manages chronic health conditions with support"
+        ],
+        "needs": [
+            "Resists certain food groups or food textures",
+            "Moves around constantly, often running or climbing inappropriately",
+            "Has difficulty remaining seated and talks excessively",
+            "Difficulty eating at school",
+            "Difficulty toileting at school"
+        ],
+        "adjustments": {
+            "Seeks sensory experiences through specific behaviors": [
+                "Provided specific sensory needs and made adjustments accordingly",
+                "Provided ESO support to implement strategies to manage sensory input/integration",
+                "Weighted blanket provided"
+            ],
+            "Comfortable with various sensory stimuli without being overwhelmed": [
+                "Provided specific sensory needs and made adjustments accordingly",
+                "Provided ESO support to implement strategies to manage sensory input/integration",
+                "Weighted blanket provided"
+            ],
+            "Enjoys a wide variety of food textures": [
+                "Individual food breaks provided throughout the day",
+                "Separate equipment of health needs provided",
+                "Additional mindfulness intervention used"
+            ],
+            "Eats comfortably and without difficulty in a school environment": [
+                "Individual food breaks provided throughout the day",
+                "Separate equipment of health needs provided",
+                "Supported to walk up from the carpark in the mornings"
+            ],
+            "Adapts to specific dietary needs": [
+                "Individual food breaks provided throughout the day",
+                "Separate equipment of health needs provided",
+                "Additional mindfulness intervention used"
+            ],
+            "Manages chronic health conditions with support": [
+                "Meeting with Co-Principals in regards to individual student needs",
+                "Separate equipment of health needs provided",
+                "PSG conducted to discuss adjustments and individual learning goals"
+            ],
+            "Resists certain food groups or food textures": [
+                "Provided ESO support to implement strategies to manage sensory input/integration",
+                "Provided unscheduled brain break to complete a learning task",
+                "Provided individual food breaks throughout the day",
+                "Supported to walk up from the carpark in the mornings"
+            ],
+            "Moves around constantly, often running or climbing inappropriately": [
+                "Time off the yard provided",
+                "Fidget toys/materials provided",
+                "Implemented a visual timetable with 1 or 2 step instructions",
+                "Resistant bands on chair provided"
+            ],
+            "Has difficulty remaining seated and talks excessively": [
+                "Implemented a visual timetable with 1 or 2 step instructions",
+                "Provided additional movement breaks implemented for individual regulation",
+                "Provided a Dot Reward system",
+                "Noise-canceling headphones provided"
+            ],
+            "Difficulty eating at school": [
+                "Health care plan",
+                "Breakfast club program accessed",
+                "Supported to walk up from the carpark in the mornings",
+                "Individual food breaks provided throughout the day"
+            ],
+            "Difficulty toileting at school": [
+                "Separate equipment for health needs provided",
+                "Health care plan",
+                "Supported to walk up from the carpark in the mornings",
+                "Time off the yard provided"
+            ]
+        }
+    },
+    "Restrictive and Repetitive Behaviors": {
+        "strengths": [
+            "Prefers consistency and routine in daily activities",
+            "Seeks comfort in routines",
+            "Engages in focused, consistent play activities",
+            "Thrives in quiet, calm environments",
+            "Deeply engages in focused activities",
+            "Has a strong focus on specific interests/topics",
+            "Processes information by repeating words or phrases"
+        ],
+        "needs": [
+            "Has difficulty moving from one topic to another",
+            "Focuses on objects for long periods of time and may enjoy this more than other activities",
+            "Often repeats words, questions, or phrases and cannot move on to other topics",
+            "Expresses high levels of anxiety regarding specific objects or events"
+        ],
+        "adjustments": {
+            "Prefers consistency and routine in daily activities": [
+                "Implemented a visual timetable with 1 or 2 step instructions",
+                "Provided additional information ahead of time for prewarning",
+                "Created a social story for a specific change/new experience"
+            ],
+            "Seeks comfort in routines": [
+                "Provided an individual timetable on desk",
+                "Implemented a visual timetable with 1 or 2 step instructions",
+                "Provided visuals for choice making"
+            ],
+            "Engages in focused, consistent play activities": [
+                "Provided visuals for communication",
+                "Provided visuals for choice making",
+                "Provided additional movement breaks implemented for individual regulation"
+            ],
+            "Thrives in quiet, calm environments": [
+                "Provided additional access to the quiet area within the classroom",
+                "Implemented specific seating arrangements to support student needs",
+                "Used a cool down strategy between changing activities"
+            ],
+            "Deeply engages in focused activities": [
+                "Provided additional time to complete a learning task",
+                "Provided 1:1 support to complete a learning task",
+                "Adjusted the pace of delivery to a topic or task"
+            ],
+            "Has a strong focus on specific interests/topics": [
+                "Planned for teaching to meet individual learning goal",
+                "Modified a learning task / modified worksheet",
+                "Provided highly individualised strategies to meet specific need"
+            ],
+            "Processes information by repeating words or phrases": [
+                "Planned for additional explicit teaching 1:1 or small group",
+                "Provided 1:1 support to complete a learning task",
+                "Provided an individualised program in response to a need"
+            ],
+            "Has difficulty moving from one topic to another": [
+                "Implemented a visual timetable with 1 or 2 step instructions",
+                "Provided additional information ahead of time for pre-warning",
+                "Reduced workload expectation of the student"
+            ],
+            "Focuses on objects for long periods of time and may enjoy this more than other activities": [
+                "Limited the amount of choice in an open-ended task",
+                "Implemented specific seating arrangements to support student needs",
+                "Provided intensive reinforcement schedules, e.g., every 1–3 minutes",
+                "Provided fidget toys/materials"
+            ],
+            "Often repeats words, questions, or phrases and cannot move on to other topics": [
+                "Provided a Dot Reward system",
+                "Provided intensive reinforcement schedules, e.g., every 1–3 minutes",
+                "Provided highly individualized strategies to meet specific needs"
+            ],
+            "Expresses high levels of anxiety regarding specific objects or events": [
+                "Provided ESO support to implement strategies to manage sensory input/integration",
+                "Provided additional movement breaks implemented for individual regulation",
+                "Weighted blanket provided",
+                "Implemented 'special jobs' for individual regulation"
+            ]
+        }
+    },
+    "Academic and Learning Supports": {
+        "strengths": [
+            "Prefers to learn in a consistent way",
+            "Thrives in hands-on learning",
+            "Responds well to structured learning environments",
+            "Keeps track of personal belongings without assistance",
+            "Consistently stays on task and maintains effort independently"
+        ],
+        "needs": [
+            "Difficulty independently staying on task and maintaining effort",
+            "Difficulty comprehending and summarizing what has been learned"
+        ],
+        "adjustments": {
+            "Prefers to learn in a consistent way": [
+                "Planned for teaching to meet individual learning goal",
+                "Provided an individual timetable on desk",
+                "Implemented specific seating arrangements to support student needs"
+            ],
+            "Thrives in hands-on learning": [
+                "Planned for hands-on learning to support individual need",
+                "Provided specific sensory needs and made adjustments accordingly",
+                "Provided an individual program in response to a need"
+            ],
+            "Responds well to structured learning environments": [
+                "Provided an individual timetable on desk",
+                "Provided visuals for choice making",
+                "Provided additional time to complete a learning task"
+            ],
+            "Keeps track of personal belongings without assistance": [
+                "Provided additional movement breaks implemented for individual regulation",
+                "Provided visuals for communication",
+                "Communication book entry"
+            ],
+            "Consistently stays on task and maintains effort independently": [
+                "Provided an individual timetable on desk",
+                "Implemented specific seating arrangements to support student needs",
+                "Communication with Allied Health professional to support individual needs"
+            ],
+            "Difficulty independently staying on task and maintaining effort": [
+                "Planned for individual IT support to meet specific needs",
+                "Provided additional support with a visual timer",
+                "Provided separate supervision to complete a learning task",
+                "Additional supports (headphones, technology) provided to complete assessment or test"
+            ],
+            "Difficulty comprehending and summarizing what has been learned": [
+                "Planned for hands-on learning to support individual needs",
+                "Provided additional written/visual instructions to support verbal instructions",
+                "Provided breakdown of instructions to complete a learning task",
+                "Provided additional time to complete an assessment/test"
+            ]
+        }
+    }
+}

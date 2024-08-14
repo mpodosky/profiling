@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Profile Results</h2>
+
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Selected Strengths</th>
+            <th>Selected Needs</th>
+            <th>Appropriate Adjustments</th>
+        </tr>
+        {% for category, details in data.items() %}
+        <tr>
+            <td>{{ category }}</td>
+            <td>
+                {% for strength in strengths %}
+                    {% if strength in details['strengths'] %}
+                        <div>{{ strength }}</div>
+                    {% endif %}
+                {% endfor %}
+            </td>
+            <td>
+                {% for need in needs %}
+                    {% if need in details['needs'] %}
+                        <div>{{ need }}</div>
+                    {% endif %}
+                {% endfor %}
+            </td>
+            <td>
+                {% for strength in strengths %}
+                    {% if strength in details['adjustments'] %}
+                        <div>{{ details['adjustments'][strength] | join(', ') }}</div>
+                    {% endif %}
+                {% endfor %}
+                {% for need in needs %}
+                    {% if need in details['adjustments'] %}
+                        <div>{{ details['adjustments'][need] | join(', ') }}</div>
+                    {% endif %}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/profile" class="button">Back to Profiling</a>
+</div>
+{% endblock %}

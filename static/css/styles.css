@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Container to avoid edge overflow and add spacing */
+.container {
+    max-width: 1200px;
+    margin: 40px auto; /* Adds 40px spacing at the top and bottom */
+    padding: 0 20px;
+}
+
+/* Header and Page Title */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.header-content .logo {
+    margin-right: 20px;
+}
+
+.page-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Buttons */
+button, .start-button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button:hover, .start-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:focus, .start-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+/* Input Fields and Labels */
+.category div {
+    margin-bottom: 4px; /* Reduce space between checkbox items */
+}
+
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: top;
+    margin-top: 3px; /* Adjust for alignment with label text */
+    display: inline-block;
+}
+
+.category label {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 1.2em; /* Reduce line height to make it more compact */
+    vertical-align: top;
+    margin-left: 8px; /* Slightly reduce margin between checkbox and label */
+    width: calc(100% - 35px); /* Adjust width to keep text inline */
+}
+
+/* Containers */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.category, .landing-container, .table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.category h3 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.category h3 + div {
+    margin-top: 10px; /* Reduce space between heading and list */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Logo */
+.logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+/* Landing Page */
+.landing-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 80px;
+}
+
+.start-button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.start-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+/* Styles for buttons */
+.button {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.4);
+}
