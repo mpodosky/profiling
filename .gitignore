@@ -1,3 +1,4 @@
 # Ignore macOS system files
 .DS_Store
 venv/
+static/.DS_Store
