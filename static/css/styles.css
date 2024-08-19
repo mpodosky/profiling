@@ -1,200 +1,109 @@
 /* General Styles */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3 {
-    color: #333;
-    font-weight: 600;
-}
-
-p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 40px;
-}
-
-/* Container to avoid edge overflow and add spacing */
 .container {
-    max-width: 1200px;
-    margin: 40px auto; /* Adds 40px spacing at the top and bottom */
-    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Header and Page Title */
+/* Header and Page Titles */
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #4CAF50;
+    border-radius: 8px 8px 0 0;
 }
 
 .header-content .logo {
-    margin-right: 20px;
+    max-width: 50px;
+    margin-right: 15px;
 }
 
 .page-title {
+    color: white;
     font-size: 2em;
     margin: 0;
 }
 
-/* Buttons */
-button, .start-button {
-    font-size: 1.2em;
-    padding: 15px 30px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
+h1, h2, h3 {
     text-align: center;
-    margin-top: 20px;
+    color: #333;
 }
 
-button:hover, .start-button:hover {
-    background-color: #45a049;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-button:focus, .start-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.4);
-}
-
-/* Input Fields and Labels */
-.category div {
-    margin-bottom: 4px; /* Reduce space between checkbox items */
-}
-
-input[type="checkbox"], input[type="radio"] {
-    vertical-align: top;
-    margin-top: 3px; /* Adjust for alignment with label text */
-    display: inline-block;
-}
-
-.category label {
-    display: inline-block;
-    font-size: 0.9em;
-    font-weight: normal;
-    line-height: 1.2em; /* Reduce line height to make it more compact */
-    vertical-align: top;
-    margin-left: 8px; /* Slightly reduce margin between checkbox and label */
-    width: calc(100% - 35px); /* Adjust width to keep text inline */
-}
-
-/* Containers */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.category, .landing-container, .table-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
     margin-bottom: 20px;
 }
 
-.category h3 {
-    font-size: 1.2em;
-    color: #4CAF50;
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
     margin-bottom: 10px;
-    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.category h3 + div {
-    margin-top: 10px; /* Reduce space between heading and list */
+/* Form Sections */
+.form-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-th {
-    background-color: #f2f2f2;
-    font-weight: 600;
+.checkbox-item label {
+    margin-left: 8px;
+    font-size: 1em;
 }
 
-tbody tr:hover {
-    background-color: #f1f1f1;
+/* Other input styles */
+.checkbox-item input[type="text"] {
+    margin-left: 10px;
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Logo */
-.logo {
-    width: 180px;
-    height: auto;
-    margin-bottom: 0;
-}
-
-/* Landing Page */
-.landing-container {
-    text-align: center;
-    padding: 50px;
-    margin-top: 80px;
-}
-
-.start-button {
-    font-size: 1.2em;
-    padding: 15px 30px;
+/* Button Styles */
+.btn-submit {
+    display: block;
+    width: auto;
+    padding: 12px 24px;
     background-color: #4CAF50;
     color: white;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.start-button:hover {
-    background-color: #45a049;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.start-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.4);
-}
-
-/* Styles for buttons */
-.button {
-    display: inline-block;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
     text-align: center;
+    border-radius: 5px;
     margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.button:hover {
+.btn-submit:hover {
     background-color: #45a049;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.button:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.4);
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Strengths, Interests, and Hobbies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Strengths, Interests, and Hobbies</h1>
+        <form action="{{ url_for('selection') }}" method="POST">
+            <div class="form-section">
+                <div class="column">
+                    <h2>Strengths/Interests</h2>
+                    {% for strength in strengths %}
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="strengths" value="{{ strength }}">
+                            <label>{{ strength }}</label>
+                        </div>
+                    {% endfor %}
+                    <!-- Other option -->
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="strengths" value="other-strength">
+                        <label>Other:</label>
+                        <input type="text" name="other_strength" placeholder="Specify other strength">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h2>Hobbies</h2>
+                    {% for hobby in hobbies %}
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hobbies" value="{{ hobby }}">
+                            <label>{{ hobby }}</label>
+                        </div>
+                    {% endfor %}
+                    <!-- Other option -->
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="other-hobby">
+                        <label>Other:</label>
+                        <input type="text" name="other_hobby" placeholder="Specify other hobby">
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="btn-submit">Generate Profile</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

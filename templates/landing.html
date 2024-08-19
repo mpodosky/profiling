@@ -5,10 +5,10 @@
 {% block content %}
 <div class="container">
     <div class="landing-container">
-        <img src="/static/images/logo.png" alt="App Logo" class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="App Logo" class="logo">
         <h1>Welcome to the Profiling App</h1>
         <p>Helping teachers create personalized learning environments for their students.</p>
-        <a href="/profile" class="start-button">Start Profiling</a>
+        <a href="{{ url_for('selection') }}" class="btn btn-primary">Start Profiling</a>
     </div>
 </div>
 {% endblock %}

@@ -1,38 +1,48 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiling Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Profiling Tool</h1>
 
-{% block title %}Profiling Page{% endblock %}
-
-{% block page_title %}Profile a Student{% endblock %}
-
-{% block content %}
-<div class="container">
-    <form action="/profile" method="POST">
-        <div class="grid-container">
-            {% for category, details in data.items() %}
-            <div class="category">
-                <h2>{{ category }}</h2>
-                <div>
-                    <h3>Strengths</h3>
-                    {% for strength in details['strengths'] %}
-                        <div>
-                            <input type="checkbox" id="strength-{{ category|replace(' ', '-') }}-{{ loop.index }}" name="{{ category|replace(' ', '-') }}-strengths" value="{{ strength }}">
-                            <label for="strength-{{ category|replace(' ', '-') }}-{{ loop.index }}">{{ strength }}</label>
-                        </div>
-                    {% endfor %}
-                </div>
-                <div>
-                    <h3>Needs</h3>
-                    {% for need in details['needs'] %}
-                        <div>
-                            <input type="checkbox" id="need-{{ category|replace(' ', '-') }}-{{ loop.index }}" name="{{ category|replace(' ', '-') }}-needs" value="{{ need }}">
-                            <label for="need-{{ category|replace(' ', '-') }}-{{ loop.index }}">{{ need }}</label>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
+        <h2>Strengths/Interests</h2>
+        <ul>
+            {% for strength in strengths %}
+                <li>{{ strength }}</li>
             {% endfor %}
-        </div>
-        <button type="submit">Generate Adjustments</button>
-    </form>
-</div>
-{% endblock %}
+        </ul>
+
+        <h2>Hobbies</h2>
+        <ul>
+            {% for hobby in hobbies %}
+                <li>{{ hobby }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Form to select needs and adjustments -->
+        <form action="{{ url_for('adjustments_needs') }}" method="POST">
+            {% for category, details in data.items() %}
+                <h3>{{ category }}</h3>
+                <label>Strengths:</label>
+                {% for strength in details['strengths'] %}
+                    <div>
+                        <input type="checkbox" name="strengths" value="{{ strength }}"> {{ strength }}
+                    </div>
+                {% endfor %}
+                <label>Needs:</label>
+                {% for need in details['needs'] %}
+                    <div>
+                        <input type="checkbox" name="needs" value="{{ need }}"> {{ need }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+            <button type="submit">Generate Adjustments</button>
+        </form>
+    </div>
+</body>
+</html>

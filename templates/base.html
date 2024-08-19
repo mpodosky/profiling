@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="/static/images/logo.png" alt="App Logo" class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="App Logo" class="logo">
             <h1 class="page-title">{% block page_title %}{% endblock %}</h1>
         </div>
     </header>
