@@ -36,12 +36,12 @@ hobbies_list = [
 def landing():
     return render_template('landing.html')
 
-@app.route('/selection', methods=['GET', 'POST'])
-def selection():
+@app.route('/profile_selection', methods=['GET', 'POST'])
+def profile_selection():
     if request.method == 'POST':
         strengths = request.form.getlist('strengths')
         hobbies = request.form.getlist('hobbies')
-        
+
         other_strength = request.form.get('other_strength')
         if 'other-strength' in strengths and other_strength:
             strengths.remove('other-strength')
@@ -51,28 +51,29 @@ def selection():
         if 'other-hobby' in hobbies and other_hobby:
             hobbies.remove('other-hobby')
             hobbies.append(other_hobby)
-        
-        return redirect(url_for('generate_profile', strengths=strengths, hobbies=hobbies))
-    
-    return render_template('selection.html', strengths=strengths_list, hobbies=hobbies_list)
 
-@app.route('/profile', methods=['GET', 'POST'])
+        return redirect(url_for('generate_profile', strengths=strengths, hobbies=hobbies))
+
+    return render_template('profile_selection.html', strengths=strengths_list, hobbies=hobbies_list)
+
+@app.route('/generate_profile', methods=['GET', 'POST'])
 def generate_profile():
     if request.method == 'POST':
         strengths = request.form.getlist('strengths')
         hobbies = request.form.getlist('hobbies')
-        return redirect(url_for('index', strengths=strengths, hobbies=hobbies))
+        return redirect(url_for('adjustments_needs', strengths=strengths, hobbies=hobbies))
     else:
         strengths = request.args.getlist('strengths')
         hobbies = request.args.getlist('hobbies')
         return render_template('profile.html', strengths=strengths, hobbies=hobbies)
 
-@app.route('/index', methods=['GET', 'POST'])
-def index():
+@app.route('/adjustments_needs', methods=['GET', 'POST'])
+def adjustments_needs():
     if request.method == 'POST':
-        selected_strengths = request.form.getlist('strengths')
-        selected_needs = request.form.getlist('needs')
+        selected_strengths = request.form.getlist('selected_strengths')
+        selected_needs = request.form.getlist('selected_needs')
 
+        # Logic to find adjustments based on selected strengths and needs
         adjustments = []
         for category, details in data.items():
             for strength in selected_strengths:
@@ -82,19 +83,22 @@ def index():
                 if need in details['adjustments']:
                     adjustments.extend(details['adjustments'][need])
 
+        # Remove duplicates
         adjustments = list(set(adjustments))
 
+        # Redirect to final results
         return render_template('results.html', strengths=selected_strengths, needs=selected_needs, adjustments=adjustments, data=data)
     else:
         strengths = request.args.getlist('strengths')
         hobbies = request.args.getlist('hobbies')
-        return render_template('index.html', strengths=strengths, hobbies=hobbies, data=data)
+        return render_template('adjustments_needs.html', strengths=strengths, hobbies=hobbies, data=data)
 
-@app.route('/adjustments_needs', methods=['POST'])
-def adjustments_needs():
-    selected_strengths = request.form.getlist('strengths')
-    selected_needs = request.form.getlist('needs')
+@app.route('/final_results', methods=['POST'])
+def final_results():
+    selected_strengths = request.form.getlist('selected_strengths')
+    selected_needs = request.form.getlist('selected_needs')
 
+    # Logic to find adjustments based on selected strengths and needs
     adjustments = []
     for category, details in data.items():
         for strength in selected_strengths:
@@ -104,9 +108,11 @@ def adjustments_needs():
             if need in details['adjustments']:
                 adjustments.extend(details['adjustments'][need])
 
+    # Remove duplicates
     adjustments = list(set(adjustments))
 
     return render_template('results.html', strengths=selected_strengths, needs=selected_needs, adjustments=adjustments, data=data)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Select Strengths, Interests, and Hobbies{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Select Your Strengths/Interests</h2>
+    <form action="{{ url_for('generate_profile') }}" method="POST">
+        <div class="column-container">
+            {% for strength in strengths %}
+                <div class="checkbox-item">
+                    <input type="checkbox" name="strengths" value="{{ strength }}">
+                    <label>{{ strength }}</label>
+                </div>
+            {% endfor %}
+        </div>
+
+        <h2>Select Your Hobbies</h2>
+        <div class="column-container">
+            {% for hobby in hobbies %}
+                <div class="checkbox-item">
+                    <input type="checkbox" name="hobbies" value="{{ hobby }}">
+                    <label>{{ hobby }}</label>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Other Strengths/Hobbies Section -->
+        <div class="other-section">
+            <div class="checkbox-item">
+                <label>Other Strength:</label>
+                <input type="text" name="other_strength" placeholder="Specify other strength">
+            </div>
+            <div class="checkbox-item">
+                <label>Other Hobby:</label>
+                <input type="text" name="other_hobby" placeholder="Specify other hobby">
+            </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Generate Profile</button>
+    </form>
+</div>
+{% endblock %}

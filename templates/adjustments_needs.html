@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Select Adjustments and Needs{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Select Adjustments and Needs</h1>
+    <form action="{{ url_for('final_results') }}" method="POST">
+        <div class="form-section">
+            <h2>Selected Strengths</h2>
+            <ul>
+                {% for strength in strengths %}
+                    <li>{{ strength }}</li>
+                    <input type="hidden" name="strengths" value="{{ strength }}">
+                {% endfor %}
+            </ul>
+
+            <h2>Selected Hobbies</h2>
+            <ul>
+                {% for hobby in hobbies %}
+                    <li>{{ hobby }}</li>
+                    <input type="hidden" name="hobbies" value="{{ hobby }}">
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="form-section">
+            <h2>Select Adjustments and Needs</h2>
+            {% for category, details in data.items() %}
+                <h3>{{ category }}</h3>
+                <label>Strengths:</label>
+                {% for strength in details['strengths'] %}
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="selected_strengths" value="{{ strength }}"> 
+                        {{ strength }}
+                    </div>
+                {% endfor %}
+                <label>Needs:</label>
+                {% for need in details['needs'] %}
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="selected_needs" value="{{ need }}"> 
+                        {{ need }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+
+        <button type="submit" class="btn-submit">Generate Final Results</button>
+    </form>
+</div>
+{% endblock %}

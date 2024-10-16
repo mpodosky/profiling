@@ -1,39 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Profile</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Your Profile</h1>
-        <h2>Strengths/Interests</h2>
-        <ul>
-            {% for strength in strengths %}
-                <li>{{ strength }}</li>
-            {% endfor %}
-        </ul>
+{% extends "base.html" %}
 
-        <h2>Hobbies</h2>
-        <ul>
-            {% for hobby in hobbies %}
-                <li>{{ hobby }}</li>
-            {% endfor %}
-        </ul>
+{% block title %}Your Profile{% endblock %}
 
-        <!-- Form to proceed to the adjustments and needs page -->
-        <form action="{{ url_for('index') }}" method="POST">
-            {% for strength in strengths %}
-                <input type="hidden" name="strengths" value="{{ strength }}">
-            {% endfor %}
-            {% for hobby in hobbies %}
-                <input type="hidden" name="hobbies" value="{{ hobby }}">
-            {% endfor %}
-            <button type="submit">Continue to Adjustments and Needs</button>
-        </form>
-        
-    </div>
-</body>
-</html>
+{% block content %}
+<div class="container">
+    <h1>Your Profile</h1>
+    <h2>Strengths/Interests</h2>
+    <ul>
+        {% for strength in strengths %}
+            <li>{{ strength }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Hobbies</h2>
+    <ul>
+        {% for hobby in hobbies %}
+            <li>{{ hobby }}</li>
+        {% endfor %}
+    </ul>
+
+<!-- Button to proceed to the adjustments and needs page -->
+<form action="{{ url_for('adjustments_needs') }}" method="GET">
+    {% for strength in strengths %}
+        <input type="hidden" name="strengths" value="{{ strength }}">
+    {% endfor %}
+    {% for hobby in hobbies %}
+        <input type="hidden" name="hobbies" value="{{ hobby }}">
+    {% endfor %}
+    <button type="submit" class="btn-submit">Continue to Adjustments and Needs</button>
+</form>
+
+
+    <!-- Button to go back to Strengths/Interests and Hobbies selection -->
+    <form action="{{ url_for('profile_selection') }}" method="GET">
+        <button type="submit" class="btn-back">Back to Strengths/Interests and Hobbies Selection</button>
+    </form>
+</div>
+{% endblock %}

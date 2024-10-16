@@ -1,18 +1,19 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Header and Page Titles */
@@ -21,89 +22,131 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #4CAF50;
-    border-radius: 8px 8px 0 0;
+    background-color: #4CAF50; /* Green color */
+    border-radius: 12px 12px 0 0;
 }
 
 .header-content .logo {
-    max-width: 50px;
+    max-width: 60px;
     margin-right: 15px;
 }
 
 .page-title {
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 300;
     margin: 0;
 }
 
+/* Typography */
 h1, h2, h3 {
     text-align: center;
     color: #333;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+/* Form Sections */
+.form-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-item label {
+    margin-left: 12px;
 }
 
 /* List Styles */
 ul {
     list-style-type: none;
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 li {
-    padding: 10px;
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Form Sections */
-.form-section {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.checkbox-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.checkbox-item label {
-    margin-left: 8px;
-    font-size: 1em;
-}
-
-/* Other input styles */
-.checkbox-item input[type="text"] {
-    margin-left: 10px;
-    flex: 1;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 0.8em;
 }
 
 /* Button Styles */
-.btn-submit {
+.btn-submit, .btn-back {
     display: block;
     width: auto;
-    padding: 12px 24px;
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-top: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-submit:hover {
-    background-color: #45a049;
+.btn-submit:hover, .btn-back:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header-content .logo {
+        max-width: 40px;
+    }
+
+    .page-title {
+        font-size: 2em;
+    }
+
+    .btn-submit, .btn-back {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+/* Container for the strengths and hobbies */
+.column-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    font-size: 14px;
 }

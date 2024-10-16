@@ -6,51 +6,46 @@
 <div class="container">
     <h2>Profile Results</h2>
 
-    <table class="results-table">
-        <thead>
-            <tr>
-                <th>Category</th>
-                <th>Selected Strengths</th>
-                <th>Selected Needs</th>
-                <th>Appropriate Adjustments</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for category, details in data.items() %}
-            <tr>
-                <td>{{ category }}</td>
-                <td>
-                    {% for strength in strengths %}
-                        {% if strength in details['strengths'] %}
-                            <div>{{ strength }}</div>
-                        {% endif %}
-                    {% endfor %}
-                </td>
-                <td>
-                    {% for need in needs %}
-                        {% if need in details['needs'] %}
-                            <div>{{ need }}</div>
-                        {% endif %}
-                    {% endfor %}
-                </td>
-                <td>
-                    {% for strength in strengths %}
-                        {% if strength in details['adjustments'] %}
-                            <div>{{ details['adjustments'][strength] | join(', ') }}</div>
-                        {% endif %}
-                    {% endfor %}
-                    {% for need in needs %}
-                        {% if need in details['adjustments'] %}
-                            <div>{{ details['adjustments'][need] | join(', ') }}</div>
-                        {% endif %}
-                    {% endfor %}
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Selected Strengths</th>
+            <th>Selected Needs</th>
+            <th>Appropriate Adjustments</th>
+        </tr>
+        {% for category, details in data.items() %}
+        <tr>
+            <td>{{ category }}</td>
+            <td>
+                {% for strength in strengths %}
+                    {% if strength in details['strengths'] %}
+                        <div>{{ strength }}</div>
+                    {% endif %}
+                {% endfor %}
+            </td>
+            <td>
+                {% for need in needs %}
+                    {% if need in details['needs'] %}
+                        <div>{{ need }}</div>
+                    {% endif %}
+                {% endfor %}
+            </td>
+            <td>
+                {% for strength in strengths %}
+                    {% if strength in details['adjustments'] %}
+                        <div>{{ details['adjustments'][strength] | join(', ') }}</div>
+                    {% endif %}
+                {% endfor %}
+                {% for need in needs %}
+                    {% if need in details['adjustments'] %}
+                        <div>{{ details['adjustments'][need] | join(', ') }}</div>
+                    {% endif %}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
     </table>
 
-    <!-- Updated the route to 'generate_profile' -->
-    <a href="{{ url_for('generate_profile') }}" class="btn btn-primary">Back to Profiling</a>
+    <a href="{{ url_for('profile_selection') }}" class="btn-back">Back to Profiling</a>
 </div>
 {% endblock %}
